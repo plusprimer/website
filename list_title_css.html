@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title style="display: none;">title list</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list_title.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/newblog.css"/>
+	</head>
+	<body>
+		<div id="nav">
+			<a href="#">
+				<img src="img/logo.png" alt=""/>
+			</a>
+			<div class="list">
+				<ul id="tog"><a href="#">AAAA</a>
+					<li><a href="#">BB</a>
+					</li>
+					<li><a href="#">BB</a>
+					</li>
+					<li><a href="#">BB</a>
+					</li>
+					<li><a href="#">BB</a>
+					</li>
+					<li><a href="#">BB</a>
+					</li>
+					<li><a href="#">BB</a>
+					</li>
+				</ul>
+				<ul><a href="#">CC</a>
+				</ul>
+				<ul><a href="#">CC</a>
+				</ul>
+				<ul><a href="#">CC</a>
+				</ul>
+				<ul><a href="#">CC</a>
+				</ul>
+			</div>
+		</div>
+		<div id="bd">
+			<div class="left">
+				<h1>文章列表首页什么的</h1>
+				<hr />
+				<div class="pre">
+					<a href="#"><h1>HTML布局</h1></a>
+					<span><a href="#">css</a></span>
+					<div class="imga">
+						<a href="#">
+							<img src="img/b201504131019112606.png" alt="" />
+						</a>
+					</div>
+					<div class="content">
+						<p>
+							HTML CSS + DIV实现整体布局 1、技术目标： 开发符合W3C标准的Web页面 理解盒子模型 实现DIV+CSS整体布局 2、什么是W3C标准？ W3C：World Wide Web Consortium，万维网联盟 W3C的职能：负责制定和维护Web行业标准 W3C标准包括一系列的标准： HTML内容方面：XHTML 样式美化方面：CSS 结构文档访问方面：DOM 页面交互方面：ECMAScript ……等等 HTML CSS + DIV实现整体布局 1、技术目标： 开发符合W3C标准的Web页面
+							理解盒子模型 实现DIV+CSS整体布局 2、什么是W3C标准？ W3C：World Wide Web Consortium，万维网联盟 W3C的职能：负责制定和维护Web行业标准 W3C标准包括一系列的标准： HTML内容方面：XHTML 样式美化方面：CSS 结构文档访问方面：DOM 页面交互方面：ECMAScript ……等等 3、W3C倡导的Web结构要符合以下要求： XHTML负责内容组织 CSS负责页面样式 4、符合W3C规范页面的结构： 5、XHTML基本规范 标签名和属性名称必须小写
+							HTML标签必须关闭 属性值必须用引号括起来 标签必须正确嵌套 文档必须拥有一个根元素，所有的XHTML元素必须嵌套于 &lt;html&gt;根元素中 6、页面开发需要注意的地方： 不要使用淘汰的标签：&lt;b&gt;、&lt;font&gt;、&lt;marquee&gt;等，可参考官方文档(http://www.w3c.org) &lt;img &gt;标签的alt属性：为图片增加alt属性 样式和内容分离：将样式和结构分离，不使用行类样式 表单的name和id：表单及表单元素要求设置name和id属性
+							使用CSS + DIV布局 页面的浏览器兼容性 7、为什么需要盒子模型？ 网页可以看成由一个个"盒子"组成， 页面分为上(网站导航)、中、下(版权声明)三个部分， 中间部分又分为左(商品分类)、中(主要部分)、右，这些版块就像一个个 的盒子，这些"盒子"中放置着各种内容，页面就是由这些"盒子"拼凑起来 8、盒子模型的相关属性 margin（外边距/边界） border（边框） padding（内边距/填充 ） 我们看图理解一下各属性作用： 以上属性又分为上、右、下、左四个方向 问题：页面元素的宽度width、高度height如何计算？
+							答案：元素的实际占位尺寸 = 元素尺寸 + padding + 边框宽度 比如：元素实际占位高度 = height属性 + 上下padding + 上下边框宽度 9、盒模型的层次关系 我们通过一个经典的盒模型3D立体结构图来理解， 从上往下看，层次关系如下： 第1层：盒子的边框(border)， 第2层：元素的内容(content)、内边距(padding) 第3层：背景图(background-image) 第4层：背景色(background-color) 第5层：盒子的外边距(margin)
+							从这个层次关系中可以看出，当同时设置背景图和背景色时，背景 图将在背景色的上方显示 10、margin外边距 可统一设置或四边分开设置 具体的设置可查看CSS帮助文档 11、水平居中和垂直居中 水平居中包含两种情况： 块级元素的水平居中：margin:0px auto; 文字内容的水平居中：text-align: center; 垂直居中： 常见的单行文字的垂直居中可设置文字所在行的height与 行高样式属性一致，比如： 12、案例的首页布局分析 只保留DIV的布局分析： 13、首页布局CSS
+							+ DIV代码分析 14、为什么需要float浮动属性？ 15、浮动属性 理解浮动属性首先要搞清楚，什么是文档流？ 文档流：浏览器根据元素在html文档中出现的顺序， 从左向右，从上到下依次排列 浮动属性是CSS中的定位属性，用法如下： float: 浮动方向(left、right、none); left为左浮动、right为右浮动、none是默认值表示不浮动 ，设置元素的浮动，该元素将脱离文档流，向左或向右移动 直到它的外边距碰到父元素的边框或另一个浮动元素的边 框为止 样式中加入
+							float:left; 执行效果如图： 你再修改为 float: right试试右浮动是什么效果 16、让商品分类DIV、内容DIV和右侧DIV并排放置 HTML结构代码： 17、clear清除 clear只对块级元素有效，表示如果前一个元素存在左浮动或右浮动，则换行 clear属性的取值：rigth、left、both、none 18、总结 盒子模型有哪些属性？各属性又分别包含哪些属性？ float属性的应用场合？有哪些取值？ clear属性的应用场合？有哪些取值？
+						</p>
+					</div>
+					<div class="clearfix">
+						<div class="share">
+							<span class="icon-share2"></span>
+							<span class="icon-twitter3"></span>
+							<span class="icon-facebook3"></span>
+							<span class="icon-feed4"></span>
+						</div>
+						<div class="read">
+							<span class="icon-price-tag"></span>
+							<a href="display1.html">阅读全文...</a>
+						</div>
+					</div>					
+				</div>
+				<div class="pre">
+					<h1>position属性详解</h1>
+					<span><a href="#">css</a></span>
+					<div class="imga">
+						<a href="#">
+							<img src="img/b201504130902024632.jpg" alt="" />
+						</a>
+					</div>
+					<div class="content">
+						<p>position属性用来做网页布局挺好用的。</p>
+						<p>position属性取值有relative，absolute，fixd, static四种</p>
+						<p>relative值表示对象不脱离文档流，其当前位置由left right top bottom四个属性来表示</p>
+						<p>absolute值表示对象脱离文档流，其参考的对象由最近的一个具有position:relative属性的对象来决定，若没有，则以body为参考。其当前位置由left right top bottom四个属性来表示</p>
+						<p>fixd值表示对象固定在一个位置，不会随着屏幕的滚动而滚动，其参考的对象以body为参考。其当前位置由left/right top/bottom的属性值来表示</p>
+						<p>static值是默认值，仍在文档流中</p>
+					</div>
+					<div class="clearfix">
+						<div class="share">
+							<span class="icon-share2"></span>
+							<span class="icon-twitter3"></span>
+							<span class="icon-facebook3"></span>
+							<span class="icon-feed4"></span>
+						</div>
+						<div class="read">
+							<span class="icon-price-tag"></span>
+							<a href="display1.html">阅读全文...</a>
+						</div>
+					</div>
+				</div>
+				<div class="pre">
+					<h1>position属性详解</h1>
+					<span><a href="#">css</a></span>
+					<div class="imga">
+						<a href="#">
+							<img src="img/b201504130902024632.jpg" alt="" />
+						</a>
+					</div>
+					<div class="content">
+						<p>position属性用来做网页布局挺好用的。</p>
+						<p>position属性取值有relative，absolute，fixd, static四种</p>
+						<p>relative值表示对象不脱离文档流，其当前位置由left right top bottom四个属性来表示</p>
+						<p>absolute值表示对象脱离文档流，其参考的对象由最近的一个具有position:relative属性的对象来决定，若没有，则以body为参考。其当前位置由left right top bottom四个属性来表示</p>
+						<p>fixd值表示对象固定在一个位置，不会随着屏幕的滚动而滚动，其参考的对象以body为参考。其当前位置由left/right top/bottom的属性值来表示</p>
+						<p>static值是默认值，仍在文档流中</p>
+					</div>
+					<div class="clearfix">
+						<div class="share">
+							<span class="icon-share2"></span>
+							<span class="icon-twitter3"></span>
+							<span class="icon-facebook3"></span>
+							<span class="icon-feed4"></span>
+						</div>
+						<div class="read">
+							<span class="icon-price-tag"></span>
+							<a href="display1.html">阅读全文...</a>
+						</div>
+					</div>
+				</div>
+				<div class="pre">
+					<h1>position属性详解</h1>
+					<span><a href="#">css</a></span>
+					<div class="imga">
+						<a href="#">
+							<img src="img/b201504130902024632.jpg" alt="" />
+						</a>
+					</div>
+					<div class="content">
+						<p>position属性用来做网页布局挺好用的。</p>
+						<p>position属性取值有relative，absolute，fixd, static四种</p>
+						<p>relative值表示对象不脱离文档流，其当前位置由left right top bottom四个属性来表示</p>
+						<p>absolute值表示对象脱离文档流，其参考的对象由最近的一个具有position:relative属性的对象来决定，若没有，则以body为参考。其当前位置由left right top bottom四个属性来表示</p>
+						<p>fixd值表示对象固定在一个位置，不会随着屏幕的滚动而滚动，其参考的对象以body为参考。其当前位置由left/right top/bottom的属性值来表示</p>
+						<p>static值是默认值，仍在文档流中</p>
+					</div>
+					<div class="clearfix">
+						<div class="share">
+							<span class="icon-share2"></span>
+							<span class="icon-twitter3"></span>
+							<span class="icon-facebook3"></span>
+							<span class="icon-feed4"></span>
+						</div>
+						<div class="read">
+							<span class="icon-price-tag"></span>
+							<a href="display1.html">阅读全文...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div style="margin-top: 6px;">
+					<h1>最新文章</h1>
+					<hr />
+					<div class="clearfix">
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>						
+					</div>
+						
+					
+				</div>
+				<div style="margin-top: 6px;">
+					<h1>全站热门</h1>
+					<hr />
+					<div class="clearfix">
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>						
+					</div>
+				</div>
+				<div style="margin-top: 6px;">
+					<h1>归档</h1>
+					<hr />
+					<div class="clearfix">
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>
+						<p><span class="icon-price-tag"></span><a href="#">DD</a></p>						
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="bottom_foot1">
+					<aside class="foot_side">
+						<strong>友情链接</strong>
+					</aside>
+					<aside class="foot_side">
+						<ul>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+						</ul>						
+					</aside>
+				</div>				
+				<div class="bottom_foot1">
+					<aside class="foot_side">
+						<strong>分享到</strong>
+					</aside>
+					<aside class="foot_side">
+						<ul>
+							<li><a href="#"><span class="icon-share2">QQ</span></a></li>
+							<li><a href="#"><span class="icon-twitter3">推特网</span></a></li>
+							<li><a href="#"><span class="icon-facebook3">facebook</span></a></li>
+							<li><a href="#"><span class="icon-feed4">新浪微博</span></a></li>							
+						</ul>						
+					</aside>
+				</div>
+				<div class="bottom_foot1">
+					<aside class="foot_side">
+						<strong>关于</strong>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+						<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+					</aside>
+					<aside class="foot_side">
+						<ul>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+						</ul>						
+					</aside>					
+				</div>
+				<div class="bottom_foot2">
+					<p>版权@什么的</p>
+				</div>
+			</div>
+		</div>			
+	</body>
+</html>
