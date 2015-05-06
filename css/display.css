@@ -44,7 +44,7 @@ span a {
 	left: -15px;
 	background: url(../img/bg_cat.png) no-repeat;
 	color: whitesmoke;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
 	font-size: large;
 	font-weight: 300;
 	text-align: center;
@@ -60,10 +60,11 @@ span a {
 }
 .content p {	
 	color: #2b2b2b;
-	padding: 0 10px;
-	font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,arial,simsun,"\5B8B\4F53";
+	padding: 4px 10px;
+	/*font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,arial,simsun,"\5B8B\4F53";*/
 	font-size: 15px;
 	font-weight: 400;
+	line-height: 1.5;/*有意思的属性，浏览器默认字体大小为16px，此处1.5表示 字体大小×1.5 = 行高*/
 }
 .returnlist {
 	float: right;
@@ -78,7 +79,7 @@ span a {
 	float: left;
 }
 .message {	
-	font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,arial,simsun,"\5B8B\4F53";
+	/*font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,arial,simsun,"\5B8B\4F53";*/
 	font-size: 15px;
 	font-weight: 300;
 	height: 170px;

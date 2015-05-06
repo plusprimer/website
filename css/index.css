@@ -23,7 +23,7 @@ li {
 	-o-box-sizing: content-box;
 }
 body {
-	background-image: url(../img/backgroundtexture.png);
+	background-image: url(../img/bg-mi0.jpg);
 }
 a {
 	text-decoration: none;
@@ -115,7 +115,7 @@ a {
 	padding: 1px;
 	border-bottom: solid 1px green;
 	width: 200px;
-	font: "times new roman";
+	/*font: "times new roman";*/
 	font-size: 1.4em;
 	font-weight: 600;
 	text-align: left;
@@ -127,7 +127,7 @@ a {
 	color: darkblue;
 	text-shadow: 1px 0px #2B2B2B;
 }
-#tog li {
+.tog li {
 	margin-top: 5px;
 	font-weight: 100;
 	font-size: 0.8em;
@@ -141,7 +141,6 @@ a {
 	margin-left: 12px;
 	padding: 4px;
 	border: 1px solid lightgrey;
-	position: ;
 }
 .bgp {
 	background: url(../img/icons.gif) 0 -560px no-repeat;
@@ -166,7 +165,7 @@ a {
 #footer {
 	float: left;
 	width: 716px;
-	background-color: lightgrey;
+	background-color: #F1F0F4;
 	border-radius: 6px;
 }
 .bottom_foot1 {
