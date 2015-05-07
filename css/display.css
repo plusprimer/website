@@ -1,6 +1,3 @@
-
-
-
 #bd {
 	position: relative;
 	left: 330px;
@@ -68,6 +65,9 @@ span a {
 }
 p span {
 	font-size: 20px;
+}
+.codelist {
+	margin-left: 15px;
 }
 .returnlist {
 	float: right;
