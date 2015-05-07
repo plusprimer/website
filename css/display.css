@@ -66,6 +66,9 @@ span a {
 	font-weight: 400;
 	line-height: 1.5;/*有意思的属性，浏览器默认字体大小为16px，此处1.5表示 字体大小×1.5 = 行高*/
 }
+p span {
+	font-size: 20px;
+}
 .returnlist {
 	float: right;
 	font-weight: 500;
