@@ -3,11 +3,10 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title style="display: none;">title list</title>
+		<title style="display: none;">HTML布局</title>
+		<link rel="stylesheet" type="text/css" href="css/display.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/list_title.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/newblog.css" />
 		<script src="js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -18,7 +17,7 @@
 				<img src="img/logo.png" alt="log" />
 			</a>
 			<div class="list">
-				<ul id="ul1"><a href="#">Html布局</a>
+				<ul id="ul1"><a href="index.html">Html布局</a>
 				</ul>
 				<ul class="tog1">
 					<li><a href="index.html">基础知识</a>
@@ -26,7 +25,7 @@
 					<li><a href="index.html">常见布局</a>
 					</li>
 				</ul>
-				<ul id="ul2"><a href="#">Javascript/JQuery</a>
+				<ul id="ul2"><a href="index.html">Javascript/JQuery</a>
 				</ul>
 				<ul class="tog2">
 					<li><a href="index.html">基础知识</a>
@@ -36,7 +35,7 @@
 					<li><a href="index.html">常用函数查询</a>
 					</li>
 				</ul>
-				<ul id="ul3"><a href="#">CSS</a>
+				<ul id="ul3"><a href="index.html">CSS</a>
 				</ul>
 				<ul class="tog3">
 					<li><a href="index.html">基础知识</a>
@@ -44,7 +43,7 @@
 					<li><a href="index.html">进阶技巧</a>
 					</li>
 				</ul>
-				<ul id="ul4"><a href="#">其他</a>
+				<ul id="ul4"><a href="index.html">其他</a>
 				</ul>
 				<ul class="tog4">
 					<li><a href="index.html">推荐文章收集</a>
@@ -56,117 +55,46 @@
 				</ul>
 			</div>
 		</div>
-
 		<div id="bd">
 			<div class="left">
 				<h1>文章列表首页什么的</h1>
 				<hr />
 				<div class="pre">
-					<a href="index.html"><h1>这是空内容</h1></a>
-					<span><a href="index.html">css</a></span>
+					<a href="index.html"><h1>写写做这个静态网站的一些事</h1></a>
+					<span><a href="index.html">布局</a></span>
 					<div class="imga">
 						<a href="index.html">
 							<img src="img/b201504131019112606.png" alt="" />
 						</a>
 					</div>
-					<div class="content">
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-					</div>
-					<div class="clearfix">
-						<div class="share">
-							<span class="icon-share2"></span>
-							<span class="icon-twitter3"></span>
-							<span class="icon-facebook3"></span>
-							<span class="icon-feed4"></span>
-						</div>
-						<div class="read">
-							<span class="icon-price-tag"></span>
-							<a href="display1.html">阅读全文...</a>
-						</div>
-					</div>
-				</div>
-				<div class="pre">
-					<h1>这是空内容</h1>
-					<span><a href="index.html">css</a></span>
-					<div class="imga">
-						<a href="index.html">
-							<img src="img/b201504130902024632.jpg" alt="" />
-						</a>
-					</div>
-					<div class="content">
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-					</div>
-					<div class="clearfix">
-						<div class="share">
-							<span class="icon-share2"></span>
-							<span class="icon-twitter3"></span>
-							<span class="icon-facebook3"></span>
-							<span class="icon-feed4"></span>
-						</div>
-						<div class="read">
-							<span class="icon-price-tag"></span>
-							<a href="display1.html">阅读全文...</a>
+					<div class="content">						
+						<p>从开始决定搞前端以来，白天上班搞测试，晚上学习前端知识储备，从3.11到5.11，两个月，期间将HTML CSS的一些基础知识过了一遍并试着做一个简单的静态网站，后来在前端群里看到肚皮群主发的如何在github上面发布静态网站的教程，终于在github上面发布了自己的静态网页。不然按之前自己的想法，要去万网或新网买一个网址，并去淘宝上面买香港服务商的空间，并用la/nmp或wa/nmp配置主机再挂网页上去。为此特地去看了网易云课堂上面教部署个人博客网站的，不过看到最后是介绍使用wordpress的模版做博客，变成了内容为王。和自己以练技术为目的的想法差别有点大
+						</p>
+						<p>前端三大模块，HTML为骨，CSS为皮，js为动作，浅显的理解。
+						</p>
+						<p>Html和css的基础内容看起来不难。在实际使用中要用好却觉得不容易，前期的html架构做的不好，对后面的css渲染也是一个大的问题，在实际做的过程中，容易为这个元素写一个css类，为另外一个元素写一个css类，css类的复用率很低；架构做好了，对页面内容的规划也是很多学问，包括排版，样式，色系；对统一的元素，css是否能正确表达，又涉及到了css表达的优先级问题。在做页面的过程中，有一次碰到了对元素写了类，但结果却没显示出效果的问题，审查元素才发现是css优先级导致的问题。当然，在解决这个问题的时候，给元素添加了id属性，觉得又使得页面冗余了很多。之所以没有用!importain，是查看相关文章说这个属性会导致整体页面性能下降，[当然，下降了多少就不是很懂了]，而且该属性用多了，估计也会有冲突问题产生。
+						</p>
+						<p>在做页面的过程中疑惑也很多，主要是在更改页面大小，那些应用了float属性的元素就喜欢到处飘，虽然后来用一个div层将这些浮动关在笼子里，而且也用了媒体查询，但是达到的效果其实并不好，做的页面没法一直根据改变的当前屏幕宽度自适应居中。因为把页面的导航栏给fixed在页面上了，旁边的主体界面不知道要怎么根据fixed的导航栏去做自适应，试过给宽度用百分比来显示，结果很糟糕。后来有次在手机上面打开部署在github上面的页面的时候，发现在手机屏幕上面导航栏竟然没有根据媒体查询的条件消失掉。后来查看手机的分辨率是720×1280，不过跟查询条件也是不符合，这问题还没找到方法解决，猜测可能是和媒体查询相关。还有个问题就是在手机上显示字体很小，基本上不能看，在手机端效果这么差是之前没有预料的。（等于是将pc端显示的样子等比例缩小了）
+						其他的相关知识点在做页面的过程中，并未好好的整理出来。比如文字方面的常用属性font一系列的，边框常用属性的归类，都没有做好。在做整篇文章单独页面的时候，对页面编辑的检查，部分html代码的转义等等，工作量还是蛮大的，后期继续做这个，要去找如何将MD文件嵌入在页面直接显示。使用markdownpad2做出来的页面看起来很简洁很漂亮。
+						关于兼容性方面的，因为做的页面都只在chrome上查看，并未在firefox，ie6、7、8以及9+以上版本查看，所以有些潜在的问题可能并未暴露出来。
+						</p>
+						<p>js方面基本上没有写，就导航栏用了jquery的toggle()函数来展开和隐藏列表。这方面是个薄弱点。有时候比较犯迷糊，就是不知道要用js来做什么。没有方向性才是真的有点拙计。
+						</p>
+						<p>此次做的静态网站很多方面都很糟糕，交互性很差，页面排版不理想，css样式表冗余，html结构不清晰，表现在导航栏布局和页面主体不搭调。风格有点灰沉，看着自己也不喜欢。页面的链接都是空链接，都是跳转到本主页。在打开网站的过程中，不知道是网速问题还是怎么，感觉有时候刷新速度很不好，背景图的刷新都可以看到在渲染。至少可以看出网站的性能不佳。还有就是兼容性的问题，包括跨屏幕的显示方式都没有好的表现，需要填的坑还真是很多很多。
+						</p>
+						<p>记 — 2015年5月11日 01:17:17
+						</p>
+						<hr />
+						<div class="returnlist"><span class="icon-checkmark">&nbsp;</span><a href="index.html">返回列表...</a>
 						</div>
 					</div>
 				</div>
-				<div class="pre">
-					<h1>这是空内容</h1>
-					<span><a href="index.html">css</a></span>
-					<div class="imga">
-						<a href="index.html">
-							<img src="img/b201504130902024632.jpg" alt="" />
-						</a>
-					</div>
-					<div class="content">
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-					</div>
-					<div class="clearfix">
-						<div class="share">
-							<span class="icon-share2"></span>
-							<span class="icon-twitter3"></span>
-							<span class="icon-facebook3"></span>
-							<span class="icon-feed4"></span>
-						</div>
-						<div class="read">
-							<span class="icon-price-tag"></span>
-							<a href="display1.html">阅读全文...</a>
-						</div>
-					</div>
-				</div>
-				<div class="pre">
-					<h1>这是空内容</h1>
-					<span><a href="index.html">css</a></span>
-					<div class="imga">
-						<a href="index.html">
-							<img src="img/b201504130902024632.jpg" alt="" />
-						</a>
-					</div>
-					<div class="content">
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-						<p>这是空内容</p>
-					</div>
-					<div class="clearfix">
-						<div class="share">
-							<span class="icon-share2"></span>
-							<span class="icon-twitter3"></span>
-							<span class="icon-facebook3"></span>
-							<span class="icon-feed4"></span>
-						</div>
-						<div class="read">
-							<span class="icon-price-tag"></span>
-							<a href="display1.html">阅读全文...</a>
-						</div>
+				<hr style="height: 3px; background-color: darkred;" />
+				<div class="discuss">
+					<div></div>
+					<div>
+						<textarea name="message" class="message" rows="" cols=""></textarea>
+						<input type="submit" name="submit" id="submit" value="评论" />
 					</div>
 				</div>
 			</div>
@@ -233,8 +161,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="footer" class="clearfix">
-				<div class="bottom_foot1 clearfix">
+			<div id="footer">
+				<div class="bottom_foot1">
 					<aside class="foot_side">
 						<strong>友情链接</strong>
 					</aside>
@@ -251,7 +179,7 @@
 						</ul>
 					</aside>
 				</div>
-				<div class="bottom_foot1 clearfix">
+				<div class="bottom_foot1">
 					<aside class="foot_side">
 						<strong>分享到</strong>
 					</aside>
@@ -268,7 +196,7 @@
 						</ul>
 					</aside>
 				</div>
-				<div class="bottom_foot1 clearfix">
+				<div class="bottom_foot1">
 					<aside class="foot_side">
 						<strong>关于</strong>
 						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
@@ -287,11 +215,12 @@
 						</ul>
 					</aside>
 				</div>
-				<div class="bottom_foot2 clearfix">
-					<p>版权@什么的</p>
+				<div class="bottom_foot2">
+					<p>Copyright@什么的</p>
 				</div>
 			</div>
 		</div>
+
 	</body>
 
 </html>
