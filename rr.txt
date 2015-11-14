@@ -7,3 +7,5 @@ add anthoer text line
 
 Git is a distributed version control system.
 Git is free software distributed under the GPL.
+there is echo sth to rr.txt
+there is echo sth to rr.txt
